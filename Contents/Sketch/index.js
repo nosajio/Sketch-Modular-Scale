@@ -1,3 +1,8 @@
+const defaults = {
+  exponent: '1.414',
+  base: '18',
+};
+
 function stepX(context) {
   const sketch = context.api();
   const steps = showInputPopover(context, 'Y Steps...', 1);
@@ -28,14 +33,14 @@ function scaleHeight(context) {
 
 function setExponent(context) {
   const sketch = context.api();
-  const defaultValue = sketch.settingForKey('ModularScaleExponent') || '1.414';
+  const defaultValue = sketch.settingForKey('ModularScaleExponent') || defaults.exponent;
   const value = showInputPopover(context, 'Exponent number (ratio)', defaultValue);
   sketch.setSettingForKey('ModularScaleExponent', value);
 }
 
 function setBase(context) {
   const sketch = context.api();
-  const defaultValue = sketch.settingForKey('ModularScaleBase') || '18';
+  const defaultValue = sketch.settingForKey('ModularScaleBase') || defaults.base;
   const value = showInputPopover(context, 'Base number (pixels)', defaultValue);
   sketch.setSettingForKey('ModularScaleBase', value);
 }
@@ -72,8 +77,8 @@ function scale(step, exp) {
  */
 function calcStep(context, s) {
   const sketch = context.api();
-  const exponent = parseFloat( sketch.settingForKey('ModularScaleExponent') );
-  const base = parseFloat( sketch.settingForKey('ModularScaleBase') );
+  const exponent = parseFloat( sketch.settingForKey('ModularScaleExponent') || defaults.exponent );
+  const base = parseFloat( sketch.settingForKey('ModularScaleBase') || defaults.base );
   return (base * scale(s, exponent)).toFixed(2);
 }
 

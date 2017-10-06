@@ -1,6 +1,6 @@
 {
     "name" : "Modular Scale",
-    "identifier" : "com.sketchapp.examples.modularscale",
+    "identifier" : "com.sketchapp.plugins.modularscale",
     "version" : "1.0.4",
     "description" : "",
     "authorEmail" : "jason@nosaj.io",

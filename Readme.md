@@ -1,3 +1,5 @@
+![Modular Scale Plugin Logo](./Contents/Resources/modular-scale-plugin-logo.png)
+
 # Modular Scale Sketch Plugin
 
 ## What it does.
