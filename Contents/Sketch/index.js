@@ -29,7 +29,7 @@ function scaleHeight(context) {
 function setExponent(context) {
   const sketch = context.api();
   const defaultValue = sketch.settingForKey('ModularScaleExponent') || '1.414';
-  const value = showInputPopover(context, 'Exponent number (ratio)', '1.414');
+  const value = showInputPopover(context, 'Exponent number (ratio)', defaultValue);
   sketch.setSettingForKey('ModularScaleExponent', value);
 }
 
