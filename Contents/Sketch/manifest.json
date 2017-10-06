@@ -1,0 +1,24 @@
+{
+    "name" : "Modular Scale",
+    "identifier" : "com.sketchapp.examples.modularscale",
+    "version" : "1.0.2",
+    "description" : "",
+    "authorEmail" : "jason@nosaj.io",
+    "author" : "Jason Howmans",
+    "commands" : [
+      {
+        "name" : "Modular Step Y",
+        "script" : "index.js",
+        "handler" : "stepY",
+        "shortcut" : "cmd shift y",
+        "identifier" : "modularscaleY"
+      },
+      {
+        "name" : "Modular Step X",
+        "script" : "index.js",
+        "handler" : "stepX",
+        "shortcut" : "cmd shift x",
+        "identifier" : "modularscaleX"
+      }
+  ]
+}
