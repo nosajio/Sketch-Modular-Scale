@@ -1,4 +1,4 @@
-![Modular Scale Plugin Logo](./Contents/Resources/modular-scale-plugin-logo.png =500x)
+<img alt="Modular Scale Plugin Logo" src="./Contents/Resources/modular-scale-plugin-logo.png" width="500" />
 
 # Modular Scale Sketch Plugin
 
