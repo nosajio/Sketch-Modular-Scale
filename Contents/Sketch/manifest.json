@@ -19,6 +19,20 @@
         "handler" : "stepX",
         "shortcut" : "cmd shift x",
         "identifier" : "modularscaleX"
+      },
+      {
+        "name": "Set Exponent Value",
+        "script" : "index.js",
+        "handler" : "setExponent",
+        "shortcut" : "",
+        "identifier" : "modularscaleExponent"
+      },
+      {
+        "name": "Set Base Value",
+        "script" : "index.js",
+        "handler" : "setBase",
+        "shortcut" : "",
+        "identifier" : "modularscaleBase"
       }
   ]
 }
