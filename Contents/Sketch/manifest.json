@@ -21,6 +21,20 @@
         "identifier" : "modularscaleX"
       },
       {
+        "name" : "Scale Width to Step",
+        "script" : "index.js",
+        "handler" : "scaleWidth",
+        "shortcut" : "cmd shift alt x",
+        "identifier" : "modularscaleW"
+      },
+      {
+        "name" : "Scale Height to Step",
+        "script" : "index.js",
+        "handler" : "scaleHeight",
+        "shortcut" : "cmd shift alt y",
+        "identifier" : "modularscaleH"
+      },
+      {
         "name": "Set Exponent Value",
         "script" : "index.js",
         "handler" : "setExponent",
