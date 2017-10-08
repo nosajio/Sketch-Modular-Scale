@@ -130,7 +130,7 @@ function moveSelectionBy(context, x, y) {
     const layerFrame = layer.frame();
     const newX = parseFloat(layerFrame.x()) + parseFloat(x);
     const newY = parseFloat(layerFrame.y()) + parseFloat(y);
-    layer.frame().setX(newX);
-    layer.frame().setY(newY);
+    layer.frame().setX( Math.round(newX) );
+    layer.frame().setY( Math.round(newY) );
   })
 }
