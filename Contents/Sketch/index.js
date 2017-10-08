@@ -113,8 +113,8 @@ function scaleHeightTo(context, newHeight) {
     // Figure out the ratio of height:width so that the shape looks good when scaled
     const heightWidthRatio = heightWidth[1] / heightWidth[0];
     const newWidth = parseFloat( newHeight * heightWidthRatio );
-    layer.frame().setWidth(newWidth);
-    layer.frame().setHeight(newHeight);
+    layer.frame().setWidth( Math.round(newWidth) );
+    layer.frame().setHeight( Math.round(newHeight) );
   })
 }
 
